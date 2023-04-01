@@ -1,0 +1,33 @@
+name: ldm-daam
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.9.5
+  - pip=20.3
+  - cudatoolkit=11.3
+  - pytorch=1.12.1
+  - torchvision=0.13.1
+  - numpy=1.23.1
+  - huggingface::transformers=4.24.0
+  - conda-forge::torchmetrics=0.11.4
+  # - xformers::xformers=0.0.16=py39_cu11.3_pyt1.12.1
+  - pip:
+    - albumentations==1.3.0
+    - opencv-python==4.7.0.72
+    - imageio==2.26.0
+    - imageio-ffmpeg==0.4.8
+    - pytorch-lightning==2.0.0
+    - omegaconf==2.3.0
+    - test-tube==0.7.5
+    - streamlit==1.20.0
+    - einops==0.6.0
+    - webdataset==0.2.43
+    - kornia==0.6.10
+    - open_clip_torch
+    - invisible-watermark==0.1.5
+    - streamlit-drawable-canvas==0.9.2
+    - diffusers==0.9.0
+    - accelerate==0.17.1
+    - triton
+    - -e .
